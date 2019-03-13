@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #f6e3e7;
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(77, 75, 75);
+  display: grid;
+  text-align: center;
+}
+
+i.fab,
+i.far {
+  color: rgb(77, 75, 75);
+  text-align: center;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 10px;
+}
