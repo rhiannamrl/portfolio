@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -11,16 +11,26 @@ body {
 
 body {
   /* background-color: #f6e3e7; */
-  background-color: #fbf2ec;
-  /* background: #f1e0d3; */
+  /* background-color: #fbf2ec; */
+  background: #f1e0d3;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Open Sans', sans-serif;
   color: black;
   display: grid;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
 }
 
 i.fab,
@@ -35,26 +45,80 @@ section {
   flex-direction: row;
 }
 
+/* Intro */
+
 section #left {
-  background-color: red;
   width: 50%;
 }
 
-section #right {
-  background-color: #ffffff;
-  width: 45%;
-}
 /* Technologies */
 
-section #technologies {
+#technologies {
   width: 100%;
-  background-color: white;
+  background-color: #fbf2ec;
+  align-self: center;
+  align-items: center;
+}
+
+#technologies h1 {
+  text-align: center;
+}
+
+#technologies ul {
+  padding: 0;
+  text-align: center;
+}
+
+/* Projects */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#projects li {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+#projects img {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#projects div {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+/* Resume */
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume-sections {
+  display: flex;
+  flex-direction: row;
+}
+
+#resume ul {
+  text-align: center;
+  padding: 0;
 }
 
 /* Footer */
 
-.footer {
-  padding: 60px 20px;
+footer {
+  padding: 30px 20px;
+  background-color: #fbf2ec;
+  width: 100%;
 }
 
 .icons {
