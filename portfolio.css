@@ -27,7 +27,8 @@ h6 {
   text-align: center;
 }
 
-ul {
+ul,
+p {
   list-style-type: none;
   font-family: 'Open Sans', sans-serif;
   align-content: center;
@@ -54,6 +55,7 @@ section #left {
 /* Technologies */
 
 #technologies {
+  padding: 50px;
   width: 100%;
   background-color: #fbf2ec;
   align-self: center;
@@ -74,25 +76,32 @@ section #left {
 #projects {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: space-between;
 }
 
 #projects li {
   display: flex;
   flex-direction: row;
   padding: 50px;
+  margin: auto;
 }
 
 #projects img {
   width: 50%;
   height: 100%;
   border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #projects div {
-  width: 50%;
+  width: 35%;
   height: auto;
   text-align: center;
+  background-color: #fbf2ec;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 /* Resume */
