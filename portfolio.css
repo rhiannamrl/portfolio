@@ -7,12 +7,7 @@ html,
 body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
-}
-
-body {
-  /* background-color: #f6e3e7; */
-  /* background-color: #fbf2ec; */
-  background: #f1e0d3;
+  background-color: #ffffff;
 }
 
 h1,
@@ -21,7 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT serif', sans-serif;
+  font-style: 'light';
   color: black;
   display: grid;
   text-align: center;
@@ -31,6 +27,7 @@ ul,
 p {
   list-style-type: none;
   font-family: 'Open Sans', sans-serif;
+  font-style: 'light';
   align-content: center;
 }
 
@@ -44,12 +41,45 @@ i.far {
 section {
   display: flex;
   flex-direction: row;
+  margin-top: 75px;
 }
 
 /* Intro */
 
-section #left {
+#left {
+  margin: 20px;
   width: 50%;
+  margin-left: 60px;
+}
+
+#left h1 {
+  font-family: 'PT Serif', serif;
+  font-style: bold;
+  font-size: 70px;
+  margin: 0;
+  text-align: left;
+}
+
+#left p {
+  background-color: #fbf2ec;
+  font-size: 30px;
+  font-style: italic;
+  width: auto;
+  margin: 0;
+}
+
+#right {
+  width: 50%;
+}
+
+#right img {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: scale-down;
+  display: block;
+  transform: rotate(90deg);
 }
 
 /* Technologies */
@@ -57,13 +87,16 @@ section #left {
 #technologies {
   padding: 50px;
   width: 100%;
-  background-color: #fbf2ec;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-#technologies h1 {
-  text-align: center;
+#technologies h2 {
+  text-align: right;
+  background-color: #fbf2ec;
+  padding: 15px;
+  font-style: 'light';
 }
 
 #technologies ul {
@@ -77,6 +110,16 @@ section #left {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  margin-top: 10%;
+  background-color: #fbf2ec;
+  padding: 0;
+}
+
+#projects h2 {
+  font-style: 'light';
+  text-align: center;
+  align-self: center;
+  font-size: 40px;
 }
 
 #projects li {
@@ -98,10 +141,13 @@ section #left {
   width: 35%;
   height: auto;
   text-align: center;
-  background-color: #fbf2ec;
+  justify-content: center;
+  background-color: #ffffff;
   align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 1px peachpuff;
+  border-radius: 5px;
 }
 
 /* Resume */
