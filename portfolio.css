@@ -71,6 +71,16 @@ nav a {
   color: black;
 }
 
+nav li:hover {
+  background-color: #fbf2ec;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+
 /* Intro */
 
 #left {
@@ -109,26 +119,23 @@ nav a {
   transform: rotate(90deg);
 }
 
-/* Technologies */
+@media only screen and (max-width: 600px) {
+  #intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
-#technologies {
-  padding: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  #left {
+    width: 100%;
+    align-content: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
 
-#technologies h2 {
-  text-align: right;
-  background-color: #fbf2ec;
-  padding: 15px;
-  font-style: 'light';
-}
-
-#technologies ul {
-  padding: 0;
-  text-align: center;
+  #right img {
+    display: none;
+  }
 }
 
 /* Projects */
@@ -168,6 +175,8 @@ nav a {
   justify-content: center;
   background-color: #ffffff;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #projects u {
@@ -194,14 +203,66 @@ nav a {
   margin-right: 20px;
 }
 
+#buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 #projects button {
-  float: left;
+  background: none;
+  padding: 10px;
+  margin: 20px;
   border-style: none;
   background-color: #fbf2ec;
-  color: black;
   text-align: center;
-  text-decoration: none;
   font-size: 15px;
+}
+
+#projects button a {
+  text-decoration: none;
+  color: black;
+}
+
+#projects #buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    width: 100%;
+  }
+
+  #projects ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #projects li {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #projects div {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  #projects li img {
+    align-content: center;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  #projects .info-panel {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Resume */
@@ -274,4 +335,20 @@ footer p {
   margin-right: 20px;
   padding-right: 70px;
   padding-left: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 100%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .icons li {
+    padding: 20px;
+  }
 }
