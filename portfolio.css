@@ -71,10 +71,6 @@ nav a {
   color: black;
 }
 
-nav li:hover {
-  background-color: #fbf2ec;
-}
-
 @media only screen and (max-width: 600px) {
   nav {
     display: none;
