@@ -25,20 +25,32 @@
   </head>
 
   <body>
-    <!-- <nav>
-      <h1>Navbar</h1>
-    </nav> -->
+    <nav>
+      <ul>
+        <a href="#projects">
+          <li><u>Projects</u></li>
+        </a>
+        <a href="#resume">
+          <li><u>Experience</u></li>
+        </a>
+        <!-- <a>
+          <li><u>About</u></li>
+        </a> -->
+        <a href="mailto:rhiannamrl@gmail.com">
+          <li><u>Say Hello!</u></li>
+        </a>
+      </ul>
+    </nav>
+
     <section id="intro">
       <div id="left">
         <h1>Hi, my name is Rhianna LaRocque</h1>
         <p>
-          I am a Brooklyn-based Software Engineer.
+          I'm a Brooklyn-based Software Engineer.
         </p>
       </div>
       <div id="right">
-        <div id="image-container">
-          <img src="images/IMG_2258.jpeg" alt="rhianna" />
-        </div>
+        <img src="images/IMG_2258.jpeg" alt="rhianna" />
       </div>
     </section>
 
@@ -56,58 +68,118 @@
     </div> -->
 
     <div id="projects">
-      <h2>Projects</h2>
+      <h2><u>Projects</u></h2>
       <ul>
         <li>
           <img src="images/codeLingoDesktop.png" alt="codelingo" />
-          <div>
+          <div className="info-panel">
             <h3>Codelingo</h3>
-            <p>React | Redux | HTML | CSS | Firebase</p>
-            <p>An app to teach beginners the basics of programming</p>
-            <button>Github</button>
-            <button>Website</button>
+            <p>
+              React | Redux | HTML | CSS | Firebase <br />An app to teach
+              beginners the basics of programming
+            </p>
+            <button>
+              <a href="https://github.com/code-lingo/code-lingo" target="_blank"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a href="https://www.codelingoapp.com/login" target="_blank"
+                >Website</a
+              >
+            </button>
           </div>
         </li>
         <li>
-          <div>
+          <div className="info-panel">
             <h3>Tiger Wines</h3>
             <p>
               React | Redux | Material UI | Express | Sequelize | Postgres
+              <br />
+              An e-commerce site that sells wine
             </p>
-            <p>An e-commerce site that sells wine</p>
-            <button>Github</button>
-            <button>Website</button>
+            <button>
+              <a
+                href="https://github.com/Tiger-Earth/GraceShopper"
+                target="_blank"
+              >
+                Github</a
+              >
+            </button>
+            <button>
+              <a href="http://tigerwines.herokuapp.com/" target="_blank"
+                >Website</a
+              >
+            </button>
           </div>
           <img src="images/tigerWines2.png" alt="tiger wines" />
         </li>
         <li>
           <img src="images/hackerRankDesktop.png" alt="hacker rank" />
-          <div>
+          <div className="info-panel">
             <h3>Hacker News</h3>
-            <p>A mobile friendly implementation of the Hacker News api</p>
-            <p>React | Redux | HTML | CSS | Hacker News API</p>
-            <button>Github</button>
-            <button>Website</button>
+            <p>
+              React | Redux | HTML | CSS | Hacker News API <br />A mobile
+              friendly implementation of the Hacker News api
+            </p>
+            <button>
+              <a
+                href="https://github.com/rhiannamrl/hacker-news-api-react-app"
+                target="_blank"
+                >Github</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://hacker-news-api-rhianna.herokuapp.com"
+                target="_blank"
+                >Website</a
+              >
+            </button>
           </div>
         </li>
       </ul>
     </div>
 
     <section id="resume">
-      <h1>Resume</h1>
-      <h2>Education</h2>
-      <div id="resume-sections">
+      <h1><u>Resume</u></h1>
+      <div className="resume-sections">
+        <h2>Experience</h2>
         <ul>
-          <li>The Grace Hopper Program at Fullstack Academy</li>
-          <li>Northeastern University</li>
+          <li>
+            <h3>Freelance Web Engineer</h3>
+            <p>February 2019 - Present</p>
+          </li>
+          <li>
+            <h3>AMC Networks</h3>
+            <p>IFC Associate Producer/Editor</p>
+            <p>July 2014 - August 2016</p>
+          </li>
+          <li>
+            <h3>Harvard Law School</h3>
+            <p>Media Technician/Videographer</p>
+            <p>July 2011 - May 2014</p>
+          </li>
+          <li>
+            <h3>Northeastern University</h3>
+            <p>Studio Assistant</p>
+            <p>January 2013 - May 2013</p>
+          </li>
         </ul>
       </div>
-      <h2>Experience</h2>
-      <div id="resume-sections">
+      <div className="resume-sections">
+        <h2>Education</h2>
         <ul>
-          <li>AMCNetworks</li>
-          <li>Harvard Law School</li>
-          <li>Northeastern University</li>
+          <li>
+            <h3>The Grace Hopper Program at Fullstack Academy</h3>
+            <p>Software Engineering</p>
+            <p>October 2018 - February 2019</p>
+          </li>
+          <li>
+            <h3>Northeastern University</h3>
+            <p>Communication Studies</p>
+            <p>September 2009 - May 2014</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -115,21 +187,25 @@
     <footer>
       <ul class="icons">
         <li>
-          <i
-            class="fab fa-linkedin"
+          <a
             href="https://www.linkedin.com/in/rhiannalarocque/"
-          ></i>
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
         <li>
-          <i
-            class="fab fa-github"
-            href="https://www.github.com/rhiannamrl/"
-          ></i>
+          <a href="https://www.github.com/rhiannamrl/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li>
-          <i class="far fa-envelope"></i>
+          <a href="mailto:rhiannamrl@gmail.com">
+            <i class="far fa-envelope"></i>
+          </a>
         </li>
       </ul>
+      <p>designed by rhianna larocque</p>
     </footer>
   </body>
 </html>

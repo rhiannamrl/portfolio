@@ -44,12 +44,40 @@ section {
   margin-top: 75px;
 }
 
+/* Nav */
+
+nav {
+  margin-bottom: 10%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav u {
+  text-decoration: none;
+  border-bottom: 10px solid #fbf2ec;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Intro */
 
 #left {
   margin: 20px;
-  width: 50%;
+  width: 60%;
   margin-left: 60px;
+  padding-left: 50px;
 }
 
 #left h1 {
@@ -61,6 +89,7 @@ section {
 }
 
 #left p {
+  display: inline-block;
   background-color: #fbf2ec;
   font-size: 30px;
   font-style: italic;
@@ -69,16 +98,14 @@ section {
 }
 
 #right {
-  width: 50%;
+  width: 40%;
 }
 
 #right img {
-  width: 50%;
+  width: 60%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: scale-down;
   display: block;
+  object-fit: scale-down;
   transform: rotate(90deg);
 }
 
@@ -122,6 +149,36 @@ section {
   font-size: 40px;
 }
 
+#projects li h3 {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fbf2ec;
+  font-size: 20px;
+  font-style: italic;
+  font-style: light;
+  width: auto;
+  margin: 0;
+}
+
+#projects div {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+#projects u {
+  text-decoration: none;
+  border-bottom: 10px solid white;
+}
+
+.info-panel {
+  padding-top: 20px;
+}
+
 #projects li {
   display: flex;
   flex-direction: row;
@@ -137,30 +194,50 @@ section {
   margin-right: 20px;
 }
 
-#projects div {
-  width: 35%;
-  height: auto;
+#projects button {
+  float: left;
+  border-style: none;
+  background-color: #fbf2ec;
+  color: black;
   text-align: center;
-  justify-content: center;
-  background-color: #ffffff;
-  align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  border: 1px peachpuff;
-  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 /* Resume */
+
+.resume-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+#resume h1 {
+  font-style: 'light';
+  text-align: center;
+  align-self: center;
+  font-size: 40px;
+}
+
+#resume h2 {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fbf2ec;
+  font-size: 25px;
+  font-style: italic;
+  font-style: light;
+  width: auto;
+  margin: 0;
+}
+
+#resume u {
+  text-decoration: none;
+  border-bottom: 10px solid #fbf2ec;
+}
 
 #resume {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#resume-sections {
-  display: flex;
-  flex-direction: row;
+  padding-bottom: 20px;
 }
 
 #resume ul {
@@ -174,6 +251,11 @@ footer {
   padding: 30px 20px;
   background-color: #fbf2ec;
   width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 15px;
 }
 
 .icons {
