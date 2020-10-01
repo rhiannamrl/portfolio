@@ -108,11 +108,11 @@ nav a {
 }
 
 #right img {
+  margin-left: 40px;
   width: 60%;
   height: auto;
   display: block;
   object-fit: scale-down;
-  transform: rotate(90deg);
 }
 
 @media only screen and (max-width: 600px) {
@@ -171,8 +171,7 @@ nav a {
   justify-content: center;
   background-color: #ffffff;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #projects u {
@@ -181,7 +180,7 @@ nav a {
 }
 
 .info-panel {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 #projects li {
@@ -207,7 +206,6 @@ nav a {
 #projects button {
   background: none;
   padding: 10px;
-  margin: 20px;
   border-style: none;
   background-color: #fbf2ec;
   text-align: center;
@@ -244,7 +242,7 @@ nav a {
     width: 100%;
     align-content: center;
     justify-content: center;
-    padding-top: 20px;
+    padding: 20px;
     padding-bottom: 0;
   }
 
